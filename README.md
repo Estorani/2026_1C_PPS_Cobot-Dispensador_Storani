@@ -149,21 +149,26 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
         La solución fue, y contra toda lógica, reducir lo máximo el punto de aplicación del vacío, aplicando el mayor caudal posible en ese punto para la presión de entrada, lo que resultó en una "ventosa" de 4mm de diam de superficie de vacío efectivo.
    - Operación del sistema:
         Se analizaron distintos métodos para realizar el pick and place, como lo fueron los robots cartesianos (comunes en inyección de plástico), desplazamientos lineales neumaticos y los brazos antropomórficos, resultando este último el seleccionado ya que no implica modificar estructuralmente a la inyectora, permitiendo retirarlo con un apilador hidráulico para utilizar a la inyectora de forma manual.
-
+   - Funcionamiento del dispensador de filtros (tipo "mandolina"):
+        El operario debe colocar en orden y bien orientados los filtros en un tubo cargador, el mismo es encastrado en una posición única sobre el dispositivo separador, el cual bajo el comando del cobot retrae la cuchilla para separar una manta utilizando un pistón neumático para efectuar este movimiento, una vez separado el filtro se lo posiciona con otro pistón neumático para que el cobot pueda tomarlo.
+   - Agarre de piezas inyectadas:
+        Esta es la parte más sencilla de la automatización, ya que se trata de pienzas neumáticas estándar en el mundo de la inyección de plástico.
+     
 ---
 
 ## Arquitectura del sistema
 
 **Entradas (sensores / señales):**
-- [Sensor 1]
-- [Sensor 2]
+- Sensores del tipo magnéticos reed switch para detectar posiciones.
+- Sensores de presión de vacío para detectar si se tomó un filtro de manera exitosa
 
 **Procesamiento / Control:**
-- [Microcontrolador / PC / algoritmo / lógica]
+- Realizado por el Robot Colaborativo (C5 de AuboRobotics) el mismo puede levantar hasta 5 kilos de carga y cuenta con 16 entradas y 16 salidas.
 
 **Salidas (actuadores / señales):**
-- [Actuador 1]
-- [Actuador 2]
+- Pinzas neumáticas AA-22 de Gimatic
+- Eyectores de vacío de la marcha Schmalz
+- Pistones para el movimiento del dispenzador de filtros
 
 **Interfaz (si aplica):**
 - [Pantalla / dashboard / app / web]
