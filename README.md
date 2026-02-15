@@ -8,38 +8,6 @@ Los estudiantes deben **usar este repo como base** (fork o “Use this template�
 
 ---
 
-## 📛 Naming del repositorio (OBLIGATORIO)
-
-El nombre del repositorio debe seguir este esquema:
-
-**`ANIO_CUATRIMESTRE_TIPO_PROYECTO_APELLIDOS`**
-
-Donde:
-- **ANIO**: año de cursada (ej. `2026`)
-- **CUATRIMESTRE**: `1C` o `2C`
-- **TIPO**: `PPS` o `PF` (Proyecto Final)
-- **PROYECTO**: nombre corto *sin espacios* (recomendado: `kebab-case` o `CamelCase`)
-- **APELLIDOS**: apellidos de integrantes separados por `_` (sin tildes, sin ñ)
-
-✅ Ejemplos:
-- `2026_1C_PPS_ComederoSmart_Salto_Vazquez`
-- `2026_2C_PF_MecaChess_Duarte_Diaz`
-- `2025_2C_PPS_Escaner3D_DalleRivePrieto_Labreniuk`
-
-> Nota: GitHub **no permite** usar “/” en el nombre del repositorio.  
-> Por eso se usa **TIPO = PPS o PF** como campo separado.
-
----
-
-## 🧩 Cómo usar esta plantilla (estudiantes)
-
-0) **Crear el repo con el nombre correcto (OBLIGATORIO)**  
-   Esquema: `ANIO_CUATRIMESTRE_TIPO_PROYECTO_APELLIDOS`
-
-1) Crear tu repositorio desde esta plantilla:
-   - Opción A (recomendada): **Use this template** → Create a new repository  
-   - Opción B: **Fork**
-
 2) Editar este archivo `README.md` completando todos los campos `[ ... ]`.
 
 3) Subir archivos a las carpetas correspondientes:
@@ -52,8 +20,6 @@ Donde:
 ---
 
 ## ✅ Checklist de entrega
-- [ ] Naming correcto del repo: `ANIO_CUATRIMESTRE_TIPO_PROYECTO_APELLIDOS`
-- [ ] Título, autores, materia, **tipo (PPS/PF)**, año y cuatrimestre completos
 - [ ] Brief completo (one-liner + pitch + problema + solución + alcance + estado)
 - [ ] Instrucciones de uso reproducibles (otro puede correrlo)
 - [ ] Lista de componentes con cantidades y modelos
@@ -63,34 +29,36 @@ Donde:
 
 ---
 
-# [TÍTULO DEL PROYECTO]
+# [Cobot dispensador de piezas]
 
-**Tipo:** [PPS | PF]  
-**Año:** [2026] — **Cuatrimestre:** [1C | 2C]  
+2026_1C_PPS_CobotDispensador_Storani
+
+**Tipo:** [PPS]  
+**Año:** [2026] — **Cuatrimestre:** [1C ]  
 
 **Carrera:** Ingeniería Mecatrónica  
 **Materia / Curso:** [NOMBRE_DE_LA_MATERIA]  
 **Docente / Cátedra:** [NOMBRE_DOCENTE]  
-**Autor/es:** [APELLIDO, Nombre — Legajo] · [APELLIDO, Nombre — Legajo]
+**Autor/es:** [Storani Ezequiel]
 
 ---
 
-## Introducción / Objetivo
+**Introducción:**
+Debe automatizarse una inyectora de plástico, a la cual se le coloca en un molde un filtro y se le realiza una sobreinyeción de plástico, luego se retira la pieza inyectada
 
-**Contexto (2–4 líneas):**  
-[Describir contexto general y necesidad.]
+**Contexto:**  
+Actualmente se realiza una operación de pick and place para abastecer a la inyectora de plástico de unos filtros (llamados "mantas") a los cuales se los sobreinyecta con polipropilento coloreado para rigidizarlos y se los retira del molde de la inyectora una vez finalizado el proceso de inyección y se los coloca en una caja.
 
 **Problema a resolver:**  
-[Describir el problema de forma concreta.]
+Bajo los nuevos lineaminetos de la empresa se desea automatizar la mayor cantidad de tareas posibles, permitiendo que una persona pueda controlar varias inyectoras de plástico a la vez, en lo particular este proyecto cuenta con una problematica destacada, ya que los objetos que deben colocarse en la matriz de la inyectora ("mantas") son objetos porosos, comprimibles, vienen pegados en ocaciones unos con otros, poseen "pelos" tipo abrojo y no deben mancharse, romperse o rasgarse. Y tienen orientación.
 
 **Objetivo general:**  
-[Qué logra el sistema.]
+Realizar una automatización que coloque estas mantas en la matriz de la inyectora sin dañarlas controlando su orientación y retirando las mismas una vez inyectadas.
 
 **Objetivos específicos (opcional):**
-- [Objetivo 1]
-- [Objetivo 2]
-- [Objetivo 3]
-
+- Separar las mantas individualmente controlando su orientación
+- Transladarlas hasta la matriz
+- Retirarlas una vez inyectadas
 ---
 
 ## Índice
@@ -112,38 +80,52 @@ Donde:
 
 **One-liner (1 frase):**  
 [Qué hace el proyecto + para quién + beneficio principal.]
+Pick and place de una tela porosa para una empresa de filtros automatizando un puesto de trabajo.
 
 **Elevator pitch (30 segundos):**  
-Este proyecto **[nombre del proyecto]** (tipo **[PPS/PF]**, **[AÑO] [CUATRIMESTRE]**) resuelve **[problema]** mediante **[solución]**.  
-Está orientado a **[público objetivo]** y permite **[beneficio medible]**.  
-Se implementa con **[tecnologías clave]** y se valida mediante **[pruebas/mediciones/demo]**.
+Este proyecto **Cobot dispoensador de mantas** (tipo **[PPS]**, **[2026] [C1]**) independiza **la inyección de mantas de la intervensión constante de un operario** mediante **la implementación de un brazo antropomorfico colaborativo "cobot"**.
+Está orientado a **[una empresa de filtros]** y permite **[independizar al colaborador del proceso, permitiendo que el mismo realize varias tareas y no una sola]**.
+Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y se valida mediante **[producción automática]**.
 
 ### Problema
-- **Contexto:** [laboratorio / industria / hogar / aula / etc.]
-- **Dolor principal:** [qué falla / qué es lento / qué es costoso / qué es riesgoso]
-- **Impacto:** [tiempo, costo, errores, seguridad, calidad]
+- **Contexto:** [Industria]
+- **Dolor principal:** [Operario unicamente abocado a poner y sacar piezas]
+- **Impacto:** [Horas hombre/ piezas fabricadas]
 
 ### Solución propuesta
 - **Qué hace (features):**
-  - [Funcionalidad 1]
-  - [Funcionalidad 2]
-  - [Funcionalidad 3]
-- **Cómo lo hace (alto nivel):** [sensor → control → actuador → visualización]
-- **Valor diferencial:** [por qué es mejor / distinto]
+  - Separa uno en uno los filtros.
+  - Coloca los filtros en la inyectora.
+  - Retira las piezas sobreinyectadas.
+- **Cómo lo hace (alto nivel):** Dispositivo dispenzador de filtros → Cobot → inyección → Cobot → Pieza final
+- **Valor diferencial:** Al contrario de las propuestas realizadas por distintos proveedores (Argentina y China) esta garantiza la separación unitaria de los filtros, evitando posibles roturas de la matriz de inyección.
 
 ### Alcance
 **Incluye:**
-- [X]
-- [Y]
+- Separación de filtros
+- Colocación de los mismos
+- Retiro de piezas inyectadas
+- Verificación y autorización de inyección evitando faltantes de piezas o piezas en posiciones erroneas.
 
 **No incluye (por ahora):**
-- [A]
-- [B]
+- Verificación de orientación de filtros (no se encontró método alguno para realizar esta tarea)
+- Verificación de pieza correctamente inyectada (Si se cumplen los lineamientos previos no se tiene registro de pieza no conforme)
 
 ### Estado del proyecto
-- **Madurez:** [idea / prototipo / MVP / validado]
-- **Qué funciona hoy:** [lista corta]
-- **Próximos pasos:** [lista corta]
+- **Madurez:** [en validación]
+- **Qué funciona hoy:**
+     - Dispenzador de filtros.
+     - Colocado de filtros en matrices.
+     - Retiro de piezas inyectadas (7 de 8 piezas).
+- **Próximos pasos:**
+     - Asegurar el retiro exitoso de las 8 piezas inyectadas. (fin de automatización planeada)
+- **Oportunidad de mejora:** 
+     - Reducción de tiempo de ciclo.
+     - Reducción de tiempo de llenado de dispensador de filtros.
+     - Implementar el cobot para más procesos.
+     - Mejora general de automatización: Mejorar cableado, mejorar dispensador (hoy prototipo de aluminio, a futuro de Acero Inox. con guia lineal)
+     - Implementar control de orientacicón de filtros.
+     - Implementar control por visión artificial de piezas inyectadas.
 
 ### Demo rápida
 - **Video / GIF:** [link o ruta en MULTIMEDIA]
