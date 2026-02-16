@@ -186,28 +186,36 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 - [Hardware mínimo]
 
 ### Instalación / Puesta en marcha
-1) [Clonar / descargar]
-2) [Instalar dependencias]
-3) [Cargar firmware / ejecutar]
-4) [Validar funcionamiento]
+1) [Armado de dispensador y estación del robot]
+2) [Instalar sensores y señales]
+3) [Programación previa, antes de la integración en máquina]
+4) [Puesta apunto en inyectora]
+5) [Validar funcionamiento]
 
 ### Uso
-- **Modo normal:** [cómo se usa]
-- **Calibración (si aplica):** [pasos]
-- **Notas:** [cuidados, recomendaciones]
+- **Modo normal:**
+     Se coloca el Robot colaborativo en el puesto de operación de la inyectora de plástico, se lo asegura a la misma mediante dos tornillos para evitar desfaces y se vinculan mediente la conexión de un cable, con el mismo el robot recibe las señales que le permiten comenzar a moverse dentro de la inyectora.
+     La inyectora debe colocarse en modo semi-automático ya que el cobot enviará la confirmación de cuando terminó la tarea de pick and place para que la mesa rotativa de la inyectora intercambie matrices.
+     Debe reponerse periodicamente (estimado 1 hora) los filtros en su cargador para que el ciclo no se detenga, al igual que retirar cada 4 horas la caja donde caen las piezas inyectadas a granel.
+- **Calibración (si aplica):**
+     Al instalarse el conjunto pueden existir desfasajes a los puntos referidos por programa previamente, por ello una vez asegurado a la inyectora con los tornillos de posición se debe calibrar:
+     1. Debe referenciarse el centro de la matriz con 4 piezas inyectadas en el, esto debe realizarse sobre el punto del programa llamado "matriz".
+     2. Deben referenciarse ambos puntos donde se dejarán los filtros, para esto se debe actualizar el punto de programa llamado "matriz_matas1" y "matriz_matas2".
 
 ### Troubleshooting (opcional)
-- **Problema:** [X] → **Solución:** [Y]
-- **Problema:** [X] → **Solución:** [Y]
+- **Problema:** [Fallo tomar piezas inyectadas] → **Solución:** [Realizar calibración 1]
+- **Problema:** [Fallo tomar mantas] → **Solución:** [Revisar estado de ventosas]
+- **Problema:** [Fallo cuchilla] → **Solución:** [Retirar la presión del aire del sistema y destabar cuchilla de "mandolina", conectar al aire y reiterar funcionamiento del proegrama]
 
 ---
 
 ## Tecnologías utilizadas
-- **Robótica / Control:** [Arduino / ESP32 / Raspberry / etc.]
-- **Electrónica:** [sensores / drivers / etc.]
-- **Programación:** [C/C++ / Python / etc.]
-- **Plataformas / Tools:** [ROS / OpenCV / etc.]
-- **IA (si aplica):** [modelo / técnica]
+- **Robótica / Control:** [Robot colaborativo C5 Aubo]
+- **Electrónica:** [sensores  / drivers / etc.]
+     - Vacuostatos electricos regulables
+     - Sensores magneticos tipo Reed Switch
+     - Relés 24VDC (aislamiento entre sensores(PNP), inyectora(PNP), controlador del robor(NPN))
+- **Programación:** [Online Program en controlador de Cobot]
 
 ---
 
@@ -244,8 +252,8 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 ---
 
 ## Autor
-**[APELLIDO, Nombre]** — [Legajo]  
-Contacto (opcional): [mail / LinkedIn]
+**[Storani, Ezequiel]** — [Legajo]  
+Contacto: [estorani23@gmial.com / www.linkedin.com/in/ezequiel-storani-5a57673b1]
 
 ---
 
@@ -258,4 +266,4 @@ Contacto (opcional): [mail / LinkedIn]
 
 Usar este texto (o similar) en el campo **About** de GitHub:
 
-**[PPS | PF] — [Proyecto] — FI-UNLZ — [2026] [1C|2C] — [Apellido1, Apellido2]**
+**[PPSF] — [CobotDispensador] — FI-UNLZ — [2026] [1C] — [Storani]**
