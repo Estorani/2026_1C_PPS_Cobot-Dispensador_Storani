@@ -125,7 +125,7 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
      - Implementar control por visión artificial de piezas inyectadas.
 
 ### Demo rápida
-- **Video / GIF:** [link o ruta en MULTIMEDIA]
+- **Video / GIF:** [https://youtube.com/shorts/cSWNZMFp7aM]
 - **Instrucciones express (2 minutos):**
   1) [Paso 1]
   2) [Paso 2]
@@ -170,11 +170,6 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 - Eyectores de vacío de la marcha Schmalz
 - Pistones para el movimiento del dispenzador de filtros
 
-**Interfaz (si aplica):**
-- [Pantalla / dashboard / app / web]
-
-> (Opcional) Insertar diagrama:
-![Diagrama de bloques](PLANOS/diagrama_bloques.png)
 
 ---
 
@@ -238,7 +233,7 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 ## Fotos / Videos
 - Foto 1 → `MULTIMEDIA/[archivo]`
 - Foto 2 → `MULTIMEDIA/[archivo]`
-- Video demo → `MULTIMEDIA/[archivo]` o [link]
+- Video demo → [https://youtube.com/shorts/cSWNZMFp7aM]
 
 ---
 
