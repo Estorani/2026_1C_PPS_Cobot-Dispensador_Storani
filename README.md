@@ -1,33 +1,7 @@
 ![Logo Institucional](https://github.com/JonatanBogadoUNLZ/PPS-Jonatan-Bogado/blob/9952aac097aca83a1aadfc26679fc7ec57369d82/LOGO%20AZUL%20HORIZONTAL%20-%20fondo%20transparente.png)
 
 # UNLZ — Facultad de Ingeniería (Plantilla de Proyecto)
-## Ingeniería Mecatrónica — README + estructura estándar
-
-Este repositorio es una **PLANTILLA**.  
-Los estudiantes deben **usar este repo como base** (fork o “Use this template”) y **reemplazar los textos entre corchetes** `[ ... ]` con la información real de su proyecto.
-
----
-
-2) Editar este archivo `README.md` completando todos los campos `[ ... ]`.
-
-3) Subir archivos a las carpetas correspondientes:
-   - Código en `CODIGO/`
-   - Planos y esquemas en `PLANOS/`
-   - Fotos / videos en `MULTIMEDIA/`
-   - Datasheets en `DATASHEET/`
-   - Informes en `INFORMES/`
-
----
-
-## ✅ Checklist de entrega
-- [ ] Brief completo (one-liner + pitch + problema + solución + alcance + estado)
-- [ ] Instrucciones de uso reproducibles (otro puede correrlo)
-- [ ] Lista de componentes con cantidades y modelos
-- [ ] Esquemáticos/planos adjuntos en `PLANOS/`
-- [ ] Fotos / video demostración en `MULTIMEDIA/`
-- [ ] Informe PDF en `INFORMES/` (si aplica)
-
----
+## Ingeniería Mecatrónica —
 
 # [Cobot dispensador de piezas]
 
@@ -170,20 +144,9 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 - Eyectores de vacío de la marcha Schmalz
 - Pistones para el movimiento del dispenzador de filtros
 
-**Interfaz (si aplica):**
-- [Pantalla / dashboard / app / web]
-
-> (Opcional) Insertar diagrama:
-![Diagrama de bloques](PLANOS/diagrama_bloques.png)
-
 ---
 
 ## Instrucciones de uso
-
-### Requisitos previos
-- [Software / IDE]
-- [Drivers / librerías]
-- [Hardware mínimo]
 
 ### Instalación / Puesta en marcha
 1) [Armado de dispensador y estación del robot]
@@ -262,8 +225,8 @@ Contacto: [estorani23@gmial.com / www.linkedin.com/in/ezequiel-storani-5a57673b1
 
 ---
 
-## About (descripción corta del repositorio)
+## About
 
-Usar este texto (o similar) en el campo **About** de GitHub:
+Automatización de peak and place con robot colaborador
 
 **[PPSF] — [CobotDispensador] — FI-UNLZ — [2026] [1C] — [Storani]**
