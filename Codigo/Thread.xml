@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreadProgram>
+    <Condition ConditionType="Thread" ConditionAlias="Thread" ConditionUuid="4976fbfe841745c1a0d0d6943f3d8de6">
+        <Attribute>
+            <ThreadName>Thread</ThreadName>
+        </Attribute>
+        <Condition ConditionType="Loop" ConditionAlias="Loop" ConditionUuid="beab6fef487e4b109097b3a81b82986e">
+            <Attribute>
+                <LoopConditionMode>Always</LoopConditionMode>
+            </Attribute>
+            <Condition ConditionType="If" ConditionAlias="If" ConditionUuid="8f64e1c607ee458fb177c9b346c06484">
+                <Attribute>
+                    <Exp>V_B_Pedir_manta == true</Exp>
+                </Attribute>
+                <Condition ConditionType="Procedure" ConditionAlias="Dispensar_manta" ConditionUuid="35d6d614cd594bc7b1656bcb7e0f45de">
+                    <Attribute>
+                        <MD5>93ded6a0046ed782b990cd3d900eae52</MD5>
+                        <ProcedureName>Dispensar_manta</ProcedureName>
+                    </Attribute>
+                    <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="8ee3bceecc274d30b63fa2949b63f642">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_pos_manta</IOName>
+                            <IOValue>0</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="e74d3de45b2349f2bcb9f644d9943b8a">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.2</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="bb6c8560e4a447e88366e400951bf534">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>Disp_manta</IOName>
+                            <IOValue>1</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="e792d8fc39f74406903366dbc4b4ffce">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>2</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="If" ConditionAlias="If" ConditionUuid="b746f18e27b940c4881180666663ce36">
+                        <Attribute>
+                            <Exp>(U,DI)Disp_manta_atras == 1</Exp>
+                        </Attribute>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="1e86af6f290843399dbb96f7c2a64424">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>Disp_manta</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="3da9b0dc46d640afbcfcbd78c648a915">
+                            <Attribute>
+                                <WaitConditionMode>Time</WaitConditionMode>
+                                <WaitTime>0.5</WaitTime>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="dd6b898fec56474eab5fe20bf7db105f">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_pos_manta</IOName>
+                                <IOValue>1</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="5dee24e14dfe4a8d9d86d462cd087597">
+                            <Attribute>
+                                <WaitConditionMode>Time</WaitConditionMode>
+                                <WaitTime>0.2</WaitTime>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set_variable_pedir" ConditionUuid="53efe84d6aa94d91bba96281f946e407">
+                            <Attribute>
+                                <SetConditionMode>Variable</SetConditionMode>
+                                <VarAssignmentExp>false</VarAssignmentExp>
+                                <VarName>V_B_Pedir_manta</VarName>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Else" ConditionAlias="Else" ConditionUuid="031952d71a1547aea64ed283b1b86691">
+                        <Attribute/>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="3bae8dc486ea41c386dabaebcafe7aa1">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_1</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="ca961e4fc758445bbd3dd5489cf67f23">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_2</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="973636e59d4b4e9c895c756725300509">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_pos_manta</IOName>
+                                <IOValue>1</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="0a434e23775149ee8b67fa36c637ccae">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>Disp_manta</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Message" ConditionAlias="Message" ConditionUuid="8f3c3849adc54c3788b0e4e1e0a30b3f">
+                            <Attribute>
+                                <EnableStopProgramRunningWhenMessagePopsUp>true</EnableStopProgramRunningWhenMessagePopsUp>
+                                <MessageContent>Cuchilla trabada!!! RETIRAR AIRE y destrabar</MessageContent>
+                                <MessageType>Warning</MessageType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="184e8ef232e64ef78886b39265a03a51">
+                            <Attribute>
+                                <MoveConditionMode>MoveJoint</MoveConditionMode>
+                                <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                <ArrivalAheadType>None</ArrivalAheadType>
+                                <EnableArrivalAhead>false</EnableArrivalAhead>
+                                <EnableOffset>false</EnableOffset>
+                                <JointAcc>20,20,20,20,20,20</JointAcc>
+                                <JointSpeed>20,20,20,20,20,20</JointSpeed>
+                                <OffsetCoordName></OffsetCoordName>
+                                <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                <OffsetRX></OffsetRX>
+                                <OffsetRY></OffsetRY>
+                                <OffsetRZ></OffsetRZ>
+                                <OffsetX></OffsetX>
+                                <OffsetY></OffsetY>
+                                <OffsetZ></OffsetZ>
+                                <angleJerkRatio>0.25</angleJerkRatio>
+                                <isInGluing>false</isInGluing>
+                                <isInMoveGroup>false</isInMoveGroup>
+                                <jerkRatio>0.25</jerkRatio>
+                                <resolutionLength>1</resolutionLength>
+                            </Attribute>
+                            <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#1_#1" ConditionUuid="2fb58debe0af4b60b9c28dd3231cbe2a">
+                                <Attribute>
+                                    <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                    <FixedPoint>0.257797,-0.059512,0.432958,0.002738,0.999921,0.011125,-0.005081,2.441905,-0.601828,-1.923898,0.252856,-1.581577,0.848881</FixedPoint>
+                                </Attribute>
+                            </Condition>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="If" ConditionAlias="If_cargador_vacio" ConditionUuid="0290917eb9884ded8db0fe6e7ff9c8f3">
+                        <Attribute>
+                            <Exp>(U,DI)Sin_manta == 1</Exp>
+                        </Attribute>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="80307e32a61b4e808bfc387de5f8e0e9">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_1</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="e093dfd7690145628e9011ad03f99b8f">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_2</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="8c8c9633e44440ec9474feecde93e7e1">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_pos_manta</IOName>
+                                <IOValue>1</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="6bcd3bf6350948d69c873de6b769a143">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>Disp_manta</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Message" ConditionAlias="Message" ConditionUuid="1a0c8d031215425cb0f2deb75eef57b6">
+                            <Attribute>
+                                <EnableStopProgramRunningWhenMessagePopsUp>true</EnableStopProgramRunningWhenMessagePopsUp>
+                                <MessageContent>Recargar mantas</MessageContent>
+                                <MessageType>Information</MessageType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="c80db45868c04781bbaff5403a8e98fa">
+                            <Attribute>
+                                <MoveConditionMode>MoveJoint</MoveConditionMode>
+                                <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                <ArrivalAheadType>None</ArrivalAheadType>
+                                <EnableArrivalAhead>false</EnableArrivalAhead>
+                                <EnableOffset>false</EnableOffset>
+                                <JointAcc>20,20,20,20,20,20</JointAcc>
+                                <JointSpeed>20,20,20,20,20,20</JointSpeed>
+                                <OffsetCoordName></OffsetCoordName>
+                                <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                <OffsetRX></OffsetRX>
+                                <OffsetRY></OffsetRY>
+                                <OffsetRZ></OffsetRZ>
+                                <OffsetX></OffsetX>
+                                <OffsetY></OffsetY>
+                                <OffsetZ></OffsetZ>
+                                <angleJerkRatio>0.25</angleJerkRatio>
+                                <isInGluing>false</isInGluing>
+                                <isInMoveGroup>false</isInMoveGroup>
+                                <jerkRatio>0.25</jerkRatio>
+                                <resolutionLength>1</resolutionLength>
+                            </Attribute>
+                            <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#2_#1" ConditionUuid="ce23da3052f44ed6bf9e1fe7f3bb8013">
+                                <Attribute>
+                                    <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                    <FixedPoint>0.257797,-0.059512,0.432958,0.002738,0.999921,0.011125,-0.005081,2.441905,-0.601828,-1.923898,0.252856,-1.581577,0.848881</FixedPoint>
+                                </Attribute>
+                            </Condition>
+                        </Condition>
+                    </Condition>
+                </Condition>
+            </Condition>
+        </Condition>
+    </Condition>
+</ThreadProgram>

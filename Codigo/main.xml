@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MainProgram>
+    <Condition ConditionType="Project_Program" ConditionAlias="Project_Program" ConditionUuid="989b7f173bbe4f37abff80eb01605c81">
+        <Attribute>
+            <enableMoveGroupPro>false</enableMoveGroupPro>
+            <md5OfProjectContinueFile></md5OfProjectContinueFile>
+            <md5OfProjectPauseFile></md5OfProjectPauseFile>
+            <md5OfProjectStopFile></md5OfProjectStopFile>
+            <projectContinueFile>Contraer_disp</projectContinueFile>
+            <projectPauseFile>Contraer_disp</projectPauseFile>
+            <projectStopFile>Contraer_disp</projectStopFile>
+            <selectProjectContinue>false</selectProjectContinue>
+            <selectProjectPause>false</selectProjectPause>
+            <selectProjectStop>false</selectProjectStop>
+        </Attribute>
+        <Condition ConditionType="Loop" ConditionAlias="Loop" ConditionUuid="ea1824e3977e4116b1af332a12b9274b">
+            <Attribute>
+                <LoopConditionMode>Always</LoopConditionMode>
+            </Attribute>
+            <Condition ConditionType="If" ConditionAlias="If" ConditionUuid="96bc7d1ee36a41ba867eead64a0e5be6">
+                <Attribute>
+                    <Exp>(U,DI)Marcha == 1</Exp>
+                </Attribute>
+                <Condition ConditionType="Wait" ConditionAlias="Espera_de_inyeccion" ConditionUuid="047921a4031242ecb5c463fc78fad139">
+                    <Attribute>
+                        <WaitConditionMode>Time</WaitConditionMode>
+                        <WaitTime>10</WaitTime>
+                    </Attribute>
+                </Condition>
+                <Condition ConditionType="Timer" ConditionAlias="Tiempo_de_ciclo" ConditionUuid="2346a9b77c364118a7988a0a8442d2bb">
+                    <Attribute/>
+                </Condition>
+                <Condition ConditionType="Procedure" ConditionAlias="Sacar_tapas" ConditionUuid="80e9129c7c5b4b87b4697ecdf5381cec">
+                    <Attribute>
+                        <MD5>68341310c0ea17ff0005275e38bc12f1</MD5>
+                        <ProcedureName>Sacar_tapas</ProcedureName>
+                    </Attribute>
+                    <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="7a938987aef14f73abcd1deb970f2167">
+                        <Attribute>
+                            <MoveConditionMode>MoveJoint</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <JointAcc>50,50,50,50,50,50</JointAcc>
+                            <JointSpeed>90,90,90,90,90,90</JointSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="P_inicio" ConditionUuid="1ab3a1e2a04440238a28bd61ca2ce215">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.257797,-0.059512,0.432959,0.002739,0.999921,0.011123,-0.005081,2.441905,-0.601831,-1.923898,0.252856,-1.581577,0.848884</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Tomar_tapas" ConditionUuid="fd4c70f6ff78415c95e0333106ae0cc3">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>50</EndLinearAcc>
+                            <EndLinearSpeed>90</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="327daad4c8b544639955372e5e5f1bf9">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.160879,-0.496626,0.377896,-0.015174,0.999874,-0.000070,0.004719,1.647003,0.080913,-1.570527,-0.051099,-1.559073,0.076174</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Matriz" ConditionUuid="9d00aaed48814801a19a74b6fde568fa">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>-0.010032,-0.666411,0.216467,0.002639,0.999996,-0.001260,0.000168,1.372224,0.523870,-1.433737,-0.391921,-1.569432,-0.196049</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="0c66ca140248435191dc81cebe486bab">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>-0.010142,-0.685466,0.203786,0.006035,0.999980,-0.001213,-0.001237,1.377845,0.579557,-1.382414,-0.403494,-1.570925,-0.190525</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Cerrar_manitos" ConditionUuid="e07349ef9e10492d809a90d2fb9ae85f">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Manos</IOName>
+                            <IOValue>1</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="95a39327886c45baa6312a46ff20e70f">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="468bdf800f0542e28cd0b143a11d14bd">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>50</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="57b55ea664bb4f7ea1aded33cd6b8f2b">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>-0.010144,-0.686092,0.248320,0.001641,0.999997,-0.001204,-0.001289,1.378268,0.545204,-1.309746,-0.287867,-1.572704,-0.190125</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="47152099258048dcb4df7a9520df622d">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.160879,-0.190207,0.377895,-0.015175,0.999874,-0.000069,0.004723,1.756929,-0.674205,-2.091489,0.181593,-1.555897,0.186061</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="If" ConditionAlias="If" ConditionUuid="c7cff1ce3bfc47a4a16186378f7f3e34">
+                        <Attribute>
+                            <Exp>( (U,DI)Mano_0 == 1 ) and ( (U,DI)Mano_1 == 1 ) and ( (U,DI)Mano_2 == 1 ) and ( (U,DI)Mano_3 == 1 )</Exp>
+                        </Attribute>
+                        <Condition ConditionType="Block_Comment" ConditionAlias="Soltar_tapas" ConditionUuid="5c7c2b4c325043d8b65a32969acc7337">
+                            <Attribute>
+                                <CommentContent>Bloque dejar tapas</CommentContent>
+                            </Attribute>
+                            <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="725387d7d0c840e8baba3b2a2d8b93cf">
+                                <Attribute>
+                                    <MoveConditionMode>MoveLine</MoveConditionMode>
+                                    <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                    <ArrivalAheadType>None</ArrivalAheadType>
+                                    <EnableArrivalAhead>false</EnableArrivalAhead>
+                                    <EnableOffset>false</EnableOffset>
+                                    <EndAngleAcc>50</EndAngleAcc>
+                                    <EndAngleSpeed>50</EndAngleSpeed>
+                                    <EndLinearAcc>20</EndLinearAcc>
+                                    <EndLinearSpeed>40</EndLinearSpeed>
+                                    <OffsetCoordName>Base</OffsetCoordName>
+                                    <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                    <OffsetRX></OffsetRX>
+                                    <OffsetRY></OffsetRY>
+                                    <OffsetRZ></OffsetRZ>
+                                    <OffsetX></OffsetX>
+                                    <OffsetY></OffsetY>
+                                    <OffsetZ></OffsetZ>
+                                    <angleJerkRatio>0.25</angleJerkRatio>
+                                    <isInGluing>false</isInGluing>
+                                    <isInMoveGroup>false</isInMoveGroup>
+                                    <jerkRatio>0.25</jerkRatio>
+                                    <resolutionLength>1</resolutionLength>
+                                </Attribute>
+                                <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="053296fe926c40e08f7db98431184610">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>-0.218201,-0.120205,0.377896,0.005959,-0.633417,0.773647,-0.014732,-0.012397,-0.674205,-2.091486,0.181593,-1.555897,0.186061</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                            </Condition>
+                            <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="c8bbe4ecb0e04a0d9734887d2c888b03">
+                                <Attribute>
+                                    <MoveConditionMode>MoveLine</MoveConditionMode>
+                                    <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                    <ArrivalAheadType>None</ArrivalAheadType>
+                                    <EnableArrivalAhead>false</EnableArrivalAhead>
+                                    <EnableOffset>false</EnableOffset>
+                                    <EndAngleAcc>50</EndAngleAcc>
+                                    <EndAngleSpeed>50</EndAngleSpeed>
+                                    <EndLinearAcc>50</EndLinearAcc>
+                                    <EndLinearSpeed>90</EndLinearSpeed>
+                                    <OffsetCoordName>Base</OffsetCoordName>
+                                    <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                    <OffsetRX></OffsetRX>
+                                    <OffsetRY></OffsetRY>
+                                    <OffsetRZ></OffsetRZ>
+                                    <OffsetX></OffsetX>
+                                    <OffsetY></OffsetY>
+                                    <OffsetZ></OffsetZ>
+                                    <angleJerkRatio>0.25</angleJerkRatio>
+                                    <isInGluing>false</isInGluing>
+                                    <isInMoveGroup>false</isInMoveGroup>
+                                    <jerkRatio>0.25</jerkRatio>
+                                    <resolutionLength>1</resolutionLength>
+                                </Attribute>
+                                <Condition ConditionType="Waypoint" ConditionAlias="P_caja" ConditionUuid="10bbf2b3812c4381bffe60b596ef26dd">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>-0.506775,0.041267,0.301788,0.004320,-0.545243,0.838127,-0.015297,-0.324869,0.081246,-1.776463,-0.257554,-1.558596,0.092225</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                            </Condition>
+                            <Condition ConditionType="Set" ConditionAlias="Abrir_manitos" ConditionUuid="1163efdd23704b78bdf8e5fef01dc0e3">
+                                <Attribute>
+                                    <SetConditionMode>IO</SetConditionMode>
+                                    <Duration>0</Duration>
+                                    <IOCategory>User</IOCategory>
+                                    <IOName>A/C_Manos</IOName>
+                                    <IOValue>0</IOValue>
+                                    <IsPulseSignal>false</IsPulseSignal>
+                                    <RobotIOType>RobotBoardUserDO</RobotIOType>
+                                </Attribute>
+                            </Condition>
+                            <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="cea208ea22fe4c3c9c2deb6b6644f46c">
+                                <Attribute>
+                                    <WaitConditionMode>Time</WaitConditionMode>
+                                    <WaitTime>0.2</WaitTime>
+                                </Attribute>
+                            </Condition>
+                            <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="bd18c18ef19449c3977ff3d1a8488b11">
+                                <Attribute>
+                                    <MoveConditionMode>MoveLine</MoveConditionMode>
+                                    <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                    <ArrivalAheadType>None</ArrivalAheadType>
+                                    <EnableArrivalAhead>false</EnableArrivalAhead>
+                                    <EnableOffset>false</EnableOffset>
+                                    <EndAngleAcc>50</EndAngleAcc>
+                                    <EndAngleSpeed>50</EndAngleSpeed>
+                                    <EndLinearAcc>20</EndLinearAcc>
+                                    <EndLinearSpeed>30</EndLinearSpeed>
+                                    <OffsetCoordName>Base</OffsetCoordName>
+                                    <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                    <OffsetRX></OffsetRX>
+                                    <OffsetRY></OffsetRY>
+                                    <OffsetRZ></OffsetRZ>
+                                    <OffsetX></OffsetX>
+                                    <OffsetY></OffsetY>
+                                    <OffsetZ></OffsetZ>
+                                    <angleJerkRatio>0.25</angleJerkRatio>
+                                    <isInGluing>false</isInGluing>
+                                    <isInMoveGroup>false</isInMoveGroup>
+                                    <jerkRatio>0.25</jerkRatio>
+                                    <resolutionLength>1</resolutionLength>
+                                </Attribute>
+                                <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="e40bd964f9214b3f9ca35bb549149827">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>-0.218201,-0.120205,0.377896,0.005959,-0.633417,0.773647,-0.014732,-0.012397,-0.674205,-2.091486,0.181593,-1.555897,0.186061</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                                <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="ea8f51a0a030466382b10bd87879d231">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>0.160879,-0.190208,0.377895,-0.015173,0.999874,-0.000069,0.004723,1.756929,-0.674205,-2.091489,0.181589,-1.555897,0.186061</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                                <Condition ConditionType="Waypoint" ConditionAlias="P_inicio" ConditionUuid="0163df555eca46adadcda354ad6f2b4d">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>0.257797,-0.059512,0.432959,0.002739,0.999921,0.011123,-0.005081,2.441905,-0.601831,-1.923898,0.252856,-1.581577,0.848884</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                            </Condition>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Else" ConditionAlias="Else" ConditionUuid="e879c332e493414fb36ef04dd9273845">
+                        <Attribute/>
+                        <Condition ConditionType="Block_Comment" ConditionAlias="Soltar_tapas" ConditionUuid="08b14f7766c14c66812fc4acc90947b7">
+                            <Attribute>
+                                <CommentContent>Bloque dejar tapas</CommentContent>
+                            </Attribute>
+                            <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="746464192adf4d26bc74c4ab3a4d2d3a">
+                                <Attribute>
+                                    <MoveConditionMode>MoveLine</MoveConditionMode>
+                                    <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                    <ArrivalAheadType>None</ArrivalAheadType>
+                                    <EnableArrivalAhead>false</EnableArrivalAhead>
+                                    <EnableOffset>false</EnableOffset>
+                                    <EndAngleAcc>50</EndAngleAcc>
+                                    <EndAngleSpeed>50</EndAngleSpeed>
+                                    <EndLinearAcc>20</EndLinearAcc>
+                                    <EndLinearSpeed>40</EndLinearSpeed>
+                                    <OffsetCoordName>Base</OffsetCoordName>
+                                    <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                    <OffsetRX></OffsetRX>
+                                    <OffsetRY></OffsetRY>
+                                    <OffsetRZ></OffsetRZ>
+                                    <OffsetX></OffsetX>
+                                    <OffsetY></OffsetY>
+                                    <OffsetZ></OffsetZ>
+                                    <angleJerkRatio>0.25</angleJerkRatio>
+                                    <isInGluing>false</isInGluing>
+                                    <isInMoveGroup>false</isInMoveGroup>
+                                    <jerkRatio>0.25</jerkRatio>
+                                    <resolutionLength>1</resolutionLength>
+                                </Attribute>
+                                <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="8939816e346a4f6685869125223e60d4">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>-0.218201,-0.120205,0.377896,0.005959,-0.633417,0.773647,-0.014732,-0.012397,-0.674205,-2.091486,0.181593,-1.555897,0.186061</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                            </Condition>
+                            <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="f873cce95e4e412db094ca10d8063205">
+                                <Attribute>
+                                    <MoveConditionMode>MoveLine</MoveConditionMode>
+                                    <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                    <ArrivalAheadType>None</ArrivalAheadType>
+                                    <EnableArrivalAhead>false</EnableArrivalAhead>
+                                    <EnableOffset>false</EnableOffset>
+                                    <EndAngleAcc>50</EndAngleAcc>
+                                    <EndAngleSpeed>50</EndAngleSpeed>
+                                    <EndLinearAcc>50</EndLinearAcc>
+                                    <EndLinearSpeed>90</EndLinearSpeed>
+                                    <OffsetCoordName>Base</OffsetCoordName>
+                                    <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                    <OffsetRX></OffsetRX>
+                                    <OffsetRY></OffsetRY>
+                                    <OffsetRZ></OffsetRZ>
+                                    <OffsetX></OffsetX>
+                                    <OffsetY></OffsetY>
+                                    <OffsetZ></OffsetZ>
+                                    <angleJerkRatio>0.25</angleJerkRatio>
+                                    <isInGluing>false</isInGluing>
+                                    <isInMoveGroup>false</isInMoveGroup>
+                                    <jerkRatio>0.25</jerkRatio>
+                                    <resolutionLength>1</resolutionLength>
+                                </Attribute>
+                                <Condition ConditionType="Waypoint" ConditionAlias="P_caja" ConditionUuid="8e8e60b240064f1b85505fb2136dde10">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>-0.506775,0.041267,0.301788,0.004320,-0.545243,0.838127,-0.015297,-0.324869,0.081246,-1.776463,-0.257554,-1.558596,0.092225</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                            </Condition>
+                            <Condition ConditionType="Set" ConditionAlias="Abrir_manitos" ConditionUuid="c355c3f0bbe0497e89de40fe2a375164">
+                                <Attribute>
+                                    <SetConditionMode>IO</SetConditionMode>
+                                    <Duration>0</Duration>
+                                    <IOCategory>User</IOCategory>
+                                    <IOName>A/C_Manos</IOName>
+                                    <IOValue>0</IOValue>
+                                    <IsPulseSignal>false</IsPulseSignal>
+                                    <RobotIOType>RobotBoardUserDO</RobotIOType>
+                                </Attribute>
+                            </Condition>
+                            <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="37c5b994e0294299a3ba8fd20cb72c75">
+                                <Attribute>
+                                    <WaitConditionMode>Time</WaitConditionMode>
+                                    <WaitTime>0.2</WaitTime>
+                                </Attribute>
+                            </Condition>
+                            <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="bfb9c2d7420c4dd9b22c2594f8b0a98d">
+                                <Attribute>
+                                    <MoveConditionMode>MoveLine</MoveConditionMode>
+                                    <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                    <ArrivalAheadType>None</ArrivalAheadType>
+                                    <EnableArrivalAhead>false</EnableArrivalAhead>
+                                    <EnableOffset>false</EnableOffset>
+                                    <EndAngleAcc>50</EndAngleAcc>
+                                    <EndAngleSpeed>50</EndAngleSpeed>
+                                    <EndLinearAcc>20</EndLinearAcc>
+                                    <EndLinearSpeed>30</EndLinearSpeed>
+                                    <OffsetCoordName>Base</OffsetCoordName>
+                                    <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                    <OffsetRX></OffsetRX>
+                                    <OffsetRY></OffsetRY>
+                                    <OffsetRZ></OffsetRZ>
+                                    <OffsetX></OffsetX>
+                                    <OffsetY></OffsetY>
+                                    <OffsetZ></OffsetZ>
+                                    <angleJerkRatio>0.25</angleJerkRatio>
+                                    <isInGluing>false</isInGluing>
+                                    <isInMoveGroup>false</isInMoveGroup>
+                                    <jerkRatio>0.25</jerkRatio>
+                                    <resolutionLength>1</resolutionLength>
+                                </Attribute>
+                                <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="1b8c4c8e16b04f20b07c0e0269d5f83d">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>-0.218201,-0.120205,0.377896,0.005959,-0.633417,0.773647,-0.014732,-0.012397,-0.674205,-2.091486,0.181593,-1.555897,0.186061</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                                <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="d9a5b4a4bd56444bbb0990f1bc9bce81">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>0.160879,-0.190208,0.377895,-0.015173,0.999874,-0.000069,0.004723,1.756929,-0.674205,-2.091489,0.181589,-1.555897,0.186061</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                                <Condition ConditionType="Waypoint" ConditionAlias="P_inicio" ConditionUuid="dfd05e3c6a544d3c82f2006850735106">
+                                    <Attribute>
+                                        <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                        <FixedPoint>0.257797,-0.059512,0.432959,0.002739,0.999921,0.011123,-0.005081,2.441905,-0.601831,-1.923898,0.252856,-1.581577,0.848884</FixedPoint>
+                                    </Attribute>
+                                </Condition>
+                            </Condition>
+                        </Condition>
+                        <Condition ConditionType="Message" ConditionAlias="Falla_tomar_tapas" ConditionUuid="de1f562dbd1941f18d7d66e8aeaa693b">
+                            <Attribute>
+                                <EnableStopProgramRunningWhenMessagePopsUp>false</EnableStopProgramRunningWhenMessagePopsUp>
+                                <MessageContent>Fallo tomar tapa</MessageContent>
+                                <MessageType>Warning</MessageType>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                </Condition>
+                <Condition ConditionType="Procedure" ConditionAlias="Tomar_manta_D25" ConditionUuid="94b83554b6734fd0b4e86a4aa25c0094">
+                    <Attribute>
+                        <MD5>b7fb5b3e74367b462a2239fed7142027</MD5>
+                        <ProcedureName>Tomar_manta_D25</ProcedureName>
+                    </Attribute>
+                    <Condition ConditionType="Move" ConditionAlias="Move_inicio" ConditionUuid="33ebfcffb2bc4d5d8eeda9b9a78e6038">
+                        <Attribute>
+                            <MoveConditionMode>MoveJoint</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <JointAcc>35,35,35,35,35,35</JointAcc>
+                            <JointSpeed>100,100,100,100,100,100</JointSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#1" ConditionUuid="9a9243020ca0481f87bf7f873b114ff0">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set_Vacio1" ConditionUuid="41fc7ffe27ea4b1291592b1b76f4931f">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_1</IOName>
+                            <IOValue>1</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Tomar_manta_1" ConditionUuid="36cc8f9116444a68a35692a03d9addb8">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>50</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="33f432723d0d456da04c46e961abae04">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.289438,-0.077077,0.167072,0.003279,0.999931,0.011125,0.001975,2.464531,-0.326400,-2.537474,-0.647495,-1.573353,0.871476</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="2238f9396c054c50af992fc62ceff92f">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Retirar_manta_1" ConditionUuid="f5f867210554410d9fe50b7c22f7c89a">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>40</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="0311fe41422e4d17983626017ae41dbe">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.289442,-0.077081,0.199337,0.003282,0.999931,0.011123,0.001978,2.464528,-0.398578,-2.474415,-0.512266,-1.573353,0.871476</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="a570e5ee39c240b28ac8140ea03ca9f3">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.289439,0.030683,0.199331,0.003275,0.999931,0.011123,0.001970,2.818322,-0.430704,-2.490164,-0.494535,-1.575689,1.225264</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set_Vacio2" ConditionUuid="975c2990c33a4d0292cd35c4b1a7fc92">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_2</IOName>
+                            <IOValue>1</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Pedir_manta" ConditionUuid="9a6fb4006180415aabf71cb5045bbab1">
+                        <Attribute>
+                            <SetConditionMode>Variable</SetConditionMode>
+                            <VarAssignmentExp>true</VarAssignmentExp>
+                            <VarName>V_B_Pedir_manta</VarName>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="f8fcba9ce9c44b7d84296ee0ac1687f5">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>2.7</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Tomar_manta_2" ConditionUuid="fc1a132326644e92b7ce3e4d76f9ec67">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>30</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="47118887c6a1412d89c13bcec1996005">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.287607,0.031241,0.167392,0.003745,0.999929,0.011142,0.002180,2.818389,-0.366417,-2.557973,-0.627335,-1.576441,1.225290</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="4606e6b9797645ffad9f4529385c8ba8">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Retirar_manta_2" ConditionUuid="451d851d2eca41caa7ea7709543b4fa2">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>40</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="5fff4c32554f46e4b971f0efada4b203">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.287610,0.031240,0.203717,0.003749,0.999929,0.011136,0.002189,2.818389,-0.445741,-2.484488,-0.474547,-1.576441,1.225301</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Pedir_manta" ConditionUuid="0de5628860404bdcb114ae71a33a0f2e">
+                        <Attribute>
+                            <SetConditionMode>Variable</SetConditionMode>
+                            <VarAssignmentExp>true</VarAssignmentExp>
+                            <VarName>V_B_Pedir_manta</VarName>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="If" ConditionAlias="If" ConditionUuid="636aa6fc5ff0477a9f6f831ce7a3937e">
+                        <Attribute>
+                            <Exp>(U,DI)Check_ventosa_1 == 1 and (U,DI)Check_ventosa_2 == 1</Exp>
+                        </Attribute>
+                        <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="a093768fc2324b918c92dc4e215c5aa1">
+                            <Attribute>
+                                <MoveConditionMode>MoveLine</MoveConditionMode>
+                                <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                <ArrivalAheadType>None</ArrivalAheadType>
+                                <EnableArrivalAhead>false</EnableArrivalAhead>
+                                <EnableOffset>false</EnableOffset>
+                                <EndAngleAcc>50</EndAngleAcc>
+                                <EndAngleSpeed>50</EndAngleSpeed>
+                                <EndLinearAcc>30</EndLinearAcc>
+                                <EndLinearSpeed>80</EndLinearSpeed>
+                                <OffsetCoordName>Base</OffsetCoordName>
+                                <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                <OffsetRX></OffsetRX>
+                                <OffsetRY></OffsetRY>
+                                <OffsetRZ></OffsetRZ>
+                                <OffsetX></OffsetX>
+                                <OffsetY></OffsetY>
+                                <OffsetZ></OffsetZ>
+                                <angleJerkRatio>0.25</angleJerkRatio>
+                                <isInGluing>false</isInGluing>
+                                <isInMoveGroup>false</isInMoveGroup>
+                                <jerkRatio>0.25</jerkRatio>
+                                <resolutionLength>1</resolutionLength>
+                            </Attribute>
+                            <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#2" ConditionUuid="7eb7f0d2fc5d4c8dbf4c67c47cc6139b">
+                                <Attribute>
+                                    <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                    <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                                </Attribute>
+                            </Condition>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Else" ConditionAlias="Else" ConditionUuid="ad9346cb42e445c2baa72981832f7f50">
+                        <Attribute/>
+                        <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="9bd9ba1d9a8d417ebb883d0962e9a467">
+                            <Attribute>
+                                <MoveConditionMode>MoveJoint</MoveConditionMode>
+                                <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                <ArrivalAheadType>None</ArrivalAheadType>
+                                <EnableArrivalAhead>false</EnableArrivalAhead>
+                                <EnableOffset>false</EnableOffset>
+                                <JointAcc>30,30,30,30,30,30</JointAcc>
+                                <JointSpeed>80,80,80,80,80,80</JointSpeed>
+                                <OffsetCoordName>Base</OffsetCoordName>
+                                <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                <OffsetRX></OffsetRX>
+                                <OffsetRY></OffsetRY>
+                                <OffsetRZ></OffsetRZ>
+                                <OffsetX></OffsetX>
+                                <OffsetY></OffsetY>
+                                <OffsetZ></OffsetZ>
+                                <angleJerkRatio>0.25</angleJerkRatio>
+                                <isInGluing>false</isInGluing>
+                                <isInMoveGroup>false</isInMoveGroup>
+                                <jerkRatio>0.25</jerkRatio>
+                                <resolutionLength>1</resolutionLength>
+                            </Attribute>
+                            <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#3" ConditionUuid="94e8959779594b91b481dfc127487d2f">
+                                <Attribute>
+                                    <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                    <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                                </Attribute>
+                            </Condition>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="cfbfbd8f9208466fa7410c22408e0d27">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_1</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="574a94c2030441eba557e80fec782190">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_2</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Message" ConditionAlias="Message" ConditionUuid="f90d7975690240d985f8cf703aa7bfe5">
+                            <Attribute>
+                                <EnableStopProgramRunningWhenMessagePopsUp>false</EnableStopProgramRunningWhenMessagePopsUp>
+                                <MessageContent>Fallo tomar manta</MessageContent>
+                                <MessageType>Warning</MessageType>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                </Condition>
+                <Condition ConditionType="Block_Comment" ConditionAlias="Dejar_mantas_12" ConditionUuid="8accc8f8dbc14e7a904c0ee7c7629a6c">
+                    <Attribute>
+                        <CommentContent>Bloque para dejar mantas mas lejanas</CommentContent>
+                    </Attribute>
+                    <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="8d1e7df0ee74466aab5cc7b4db2a4c03">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>50</EndLinearAcc>
+                            <EndLinearSpeed>100</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="4fe5cb52b886434796f19d3296846028">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.120486,-0.235551,0.432960,0.001725,-0.706019,0.708170,0.005507,1.568629,-0.600625,-1.921736,0.259909,-1.576152,1.571699</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="562c8bcfb11d4a93b898160c13f92e33">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>-0.007865,-0.574763,0.226385,-0.021100,-0.695144,0.718482,-0.010681,1.344984,0.301376,-1.746485,-0.524095,-1.575869,1.377880</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="c89d0197e84e403d975324721f0b5687">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_1</IOName>
+                            <IOValue>0</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="16bd7149e18b4b69bbdad5f862c1608d">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_2</IOName>
+                            <IOValue>0</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="a1eebfb2dfc44c4fb577c2893954c775">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="3dff253cbace43cbbd50e67c049189ad">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>40</EndLinearAcc>
+                            <EndLinearSpeed>100</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#4" ConditionUuid="9cc0334bcdaa44b888bd240ebf80e78c">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                </Condition>
+                <Condition ConditionType="Procedure" ConditionAlias="Tomar_manta_D25" ConditionUuid="d25de1fe177646d2aa4f6c6f4178165e">
+                    <Attribute>
+                        <MD5>b7fb5b3e74367b462a2239fed7142027</MD5>
+                        <ProcedureName>Tomar_manta_D25</ProcedureName>
+                    </Attribute>
+                    <Condition ConditionType="Move" ConditionAlias="Move_inicio" ConditionUuid="0aacdf403aed4eddac13f6999960e380">
+                        <Attribute>
+                            <MoveConditionMode>MoveJoint</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <JointAcc>35,35,35,35,35,35</JointAcc>
+                            <JointSpeed>100,100,100,100,100,100</JointSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#4" ConditionUuid="bbcbd04f9a4f422f8ab3abdd80cc3524">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set_Vacio1" ConditionUuid="f97720c0687c4f4d8befd8feca1e8484">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_1</IOName>
+                            <IOValue>1</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Tomar_manta_1" ConditionUuid="571acda7bd834647878db4364f479815">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>50</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="8373290bad2b462b88ec18cfbb920e04">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.289438,-0.077077,0.167072,0.003279,0.999931,0.011125,0.001975,2.464531,-0.326400,-2.537474,-0.647495,-1.573353,0.871476</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="ff84cdaeb0bc48b9871ce6fbef2928a2">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Retirar_manta_1" ConditionUuid="3d088dc86b61499abd7fd4c7408b890c">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>40</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="5c7280e70c1041fe9adcde7ed49bab89">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.289442,-0.077081,0.199337,0.003282,0.999931,0.011123,0.001978,2.464528,-0.398578,-2.474415,-0.512266,-1.573353,0.871476</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="44f427b946144b78a06ef31b2d1b13bb">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.289439,0.030683,0.199331,0.003275,0.999931,0.011123,0.001970,2.818322,-0.430704,-2.490164,-0.494535,-1.575689,1.225264</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set_Vacio2" ConditionUuid="707ba66caa3541bfa77bdbd0f40eea41">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_2</IOName>
+                            <IOValue>1</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Pedir_manta" ConditionUuid="19f2754c55904110822048d4fa271c69">
+                        <Attribute>
+                            <SetConditionMode>Variable</SetConditionMode>
+                            <VarAssignmentExp>true</VarAssignmentExp>
+                            <VarName>V_B_Pedir_manta</VarName>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="d519556954aa48fcb4d567605c225450">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>2.7</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Tomar_manta_2" ConditionUuid="19fe300920a345cfbcdb3970370799b1">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>30</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="75f32eaa307445f985b97c8546b3af69">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.287607,0.031241,0.167392,0.003745,0.999929,0.011142,0.002180,2.818389,-0.366417,-2.557973,-0.627335,-1.576441,1.225290</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="4440eb6621ec49c8aebeeecffd3afe31">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Retirar_manta_2" ConditionUuid="abbcece6756b4133ba34d3ac07e2eb19">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>20</EndLinearAcc>
+                            <EndLinearSpeed>40</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="0d4659399164431ab68d8d91921c8351">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.287610,0.031240,0.203717,0.003749,0.999929,0.011136,0.002189,2.818389,-0.445741,-2.484488,-0.474547,-1.576441,1.225301</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Pedir_manta" ConditionUuid="77af1eab62194e80bd789ff3b99d2f6d">
+                        <Attribute>
+                            <SetConditionMode>Variable</SetConditionMode>
+                            <VarAssignmentExp>true</VarAssignmentExp>
+                            <VarName>V_B_Pedir_manta</VarName>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="If" ConditionAlias="If" ConditionUuid="6b8cc93442414ddcbd0589ab804f35b0">
+                        <Attribute>
+                            <Exp>(U,DI)Check_ventosa_1 == 1 and (U,DI)Check_ventosa_2 == 1</Exp>
+                        </Attribute>
+                        <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="2d944b47bb674bc1aab6d0822cc34dbb">
+                            <Attribute>
+                                <MoveConditionMode>MoveLine</MoveConditionMode>
+                                <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                <ArrivalAheadType>None</ArrivalAheadType>
+                                <EnableArrivalAhead>false</EnableArrivalAhead>
+                                <EnableOffset>false</EnableOffset>
+                                <EndAngleAcc>50</EndAngleAcc>
+                                <EndAngleSpeed>50</EndAngleSpeed>
+                                <EndLinearAcc>30</EndLinearAcc>
+                                <EndLinearSpeed>80</EndLinearSpeed>
+                                <OffsetCoordName>Base</OffsetCoordName>
+                                <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                <OffsetRX></OffsetRX>
+                                <OffsetRY></OffsetRY>
+                                <OffsetRZ></OffsetRZ>
+                                <OffsetX></OffsetX>
+                                <OffsetY></OffsetY>
+                                <OffsetZ></OffsetZ>
+                                <angleJerkRatio>0.25</angleJerkRatio>
+                                <isInGluing>false</isInGluing>
+                                <isInMoveGroup>false</isInMoveGroup>
+                                <jerkRatio>0.25</jerkRatio>
+                                <resolutionLength>1</resolutionLength>
+                            </Attribute>
+                            <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#5" ConditionUuid="32b50e53c2604570bd7beffd3edfd7b2">
+                                <Attribute>
+                                    <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                    <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                                </Attribute>
+                            </Condition>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Else" ConditionAlias="Else" ConditionUuid="a33f1255b0b94fe59bf2cb37da8d85fc">
+                        <Attribute/>
+                        <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="ef9dfe0b63fa4155b6b7e39307ef5868">
+                            <Attribute>
+                                <MoveConditionMode>MoveJoint</MoveConditionMode>
+                                <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                                <ArrivalAheadType>None</ArrivalAheadType>
+                                <EnableArrivalAhead>false</EnableArrivalAhead>
+                                <EnableOffset>false</EnableOffset>
+                                <JointAcc>30,30,30,30,30,30</JointAcc>
+                                <JointSpeed>80,80,80,80,80,80</JointSpeed>
+                                <OffsetCoordName>Base</OffsetCoordName>
+                                <OffsetCoordType>BaseCoord</OffsetCoordType>
+                                <OffsetRX></OffsetRX>
+                                <OffsetRY></OffsetRY>
+                                <OffsetRZ></OffsetRZ>
+                                <OffsetX></OffsetX>
+                                <OffsetY></OffsetY>
+                                <OffsetZ></OffsetZ>
+                                <angleJerkRatio>0.25</angleJerkRatio>
+                                <isInGluing>false</isInGluing>
+                                <isInMoveGroup>false</isInMoveGroup>
+                                <jerkRatio>0.25</jerkRatio>
+                                <resolutionLength>1</resolutionLength>
+                            </Attribute>
+                            <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#6" ConditionUuid="a133bc411b4b437f927ba2d8f7ade2a5">
+                                <Attribute>
+                                    <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                    <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                                </Attribute>
+                            </Condition>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="d1d5abf7132940658ffe8d53b488ece7">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_1</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="30ae30ff4f854fcfa93bd10f3483e676">
+                            <Attribute>
+                                <SetConditionMode>IO</SetConditionMode>
+                                <Duration>0</Duration>
+                                <IOCategory>User</IOCategory>
+                                <IOName>A/C_Vacio_2</IOName>
+                                <IOValue>0</IOValue>
+                                <IsPulseSignal>false</IsPulseSignal>
+                                <RobotIOType>RobotBoardUserDO</RobotIOType>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Message" ConditionAlias="Message" ConditionUuid="775da39ce94b4c5fba08f200bd969955">
+                            <Attribute>
+                                <EnableStopProgramRunningWhenMessagePopsUp>false</EnableStopProgramRunningWhenMessagePopsUp>
+                                <MessageContent>Fallo tomar manta</MessageContent>
+                                <MessageType>Warning</MessageType>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                </Condition>
+                <Condition ConditionType="Block_Comment" ConditionAlias="Dejar_mantas_34" ConditionUuid="fc4ac4bf961a493f91a92f3609f22b63">
+                    <Attribute>
+                        <CommentContent>Bloque para dejar mantas cercanas</CommentContent>
+                    </Attribute>
+                    <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="e8f251a697784b09a9230e774c9a52fb">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>50</EndLinearAcc>
+                            <EndLinearSpeed>100</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="bc7c9b090d4f4d019c3fd7dcb9526e00">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.120486,-0.309521,0.381917,0.001722,-0.706019,0.708170,0.005502,1.569143,-0.424801,-1.977723,0.028090,-1.576144,1.572212</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                        <Condition ConditionType="Waypoint" ConditionAlias="Waypoint" ConditionUuid="71467fb8e6b64d90b7b17035d02e7a8e">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>-0.006383,-0.474006,0.231667,-0.011613,-0.698945,0.715069,0.004204,1.302024,0.062585,-2.012523,-0.520141,-1.589760,1.324679</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="1cec8c84f83f4ac59b1f9f7b81d91378">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_1</IOName>
+                            <IOValue>0</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="e2f8d14ddf7f45a0a2b25eac49800ecb">
+                        <Attribute>
+                            <SetConditionMode>IO</SetConditionMode>
+                            <Duration>0</Duration>
+                            <IOCategory>User</IOCategory>
+                            <IOName>A/C_Vacio_2</IOName>
+                            <IOValue>0</IOValue>
+                            <IsPulseSignal>false</IsPulseSignal>
+                            <RobotIOType>RobotBoardUserDO</RobotIOType>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="467be1d84a214928aa9161ea4d1f8ebd">
+                        <Attribute>
+                            <WaitConditionMode>Time</WaitConditionMode>
+                            <WaitTime>0.5</WaitTime>
+                        </Attribute>
+                    </Condition>
+                    <Condition ConditionType="Move" ConditionAlias="Move" ConditionUuid="7fe4ca65ae0d4baabe39ae8daf54bc4d">
+                        <Attribute>
+                            <MoveConditionMode>MoveLine</MoveConditionMode>
+                            <ArrivalAheadThreshold>0.000000</ArrivalAheadThreshold>
+                            <ArrivalAheadType>None</ArrivalAheadType>
+                            <EnableArrivalAhead>false</EnableArrivalAhead>
+                            <EnableOffset>false</EnableOffset>
+                            <EndAngleAcc>50</EndAngleAcc>
+                            <EndAngleSpeed>50</EndAngleSpeed>
+                            <EndLinearAcc>40</EndLinearAcc>
+                            <EndLinearSpeed>100</EndLinearSpeed>
+                            <OffsetCoordName>Base</OffsetCoordName>
+                            <OffsetCoordType>BaseCoord</OffsetCoordType>
+                            <OffsetRX></OffsetRX>
+                            <OffsetRY></OffsetRY>
+                            <OffsetRZ></OffsetRZ>
+                            <OffsetX></OffsetX>
+                            <OffsetY></OffsetY>
+                            <OffsetZ></OffsetZ>
+                            <angleJerkRatio>0.25</angleJerkRatio>
+                            <isInGluing>false</isInGluing>
+                            <isInMoveGroup>false</isInMoveGroup>
+                            <jerkRatio>0.25</jerkRatio>
+                            <resolutionLength>1</resolutionLength>
+                        </Attribute>
+                        <Condition ConditionType="Waypoint" ConditionAlias="P_inicio_#8" ConditionUuid="7720003864a044199f3b533b1b1abc6f">
+                            <Attribute>
+                                <WaypointConditionMode>FixedPoint</WaypointConditionMode>
+                                <FixedPoint>0.257796,-0.059510,0.432959,0.002740,0.999921,0.011123,-0.005081,2.441908,-0.601834,-1.923898,0.252859,-1.581580,0.848888</FixedPoint>
+                            </Attribute>
+                        </Condition>
+                    </Condition>
+                </Condition>
+                <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="d77bd44e73ed41a58b5aefe555d95c62">
+                    <Attribute>
+                        <WaitConditionMode>Time</WaitConditionMode>
+                        <WaitTime>5</WaitTime>
+                    </Attribute>
+                </Condition>
+                <Condition ConditionType="Set" ConditionAlias="Set_inyectar" ConditionUuid="0ab57af1a62441b4a71142e57fbdfabe">
+                    <Attribute>
+                        <SetConditionMode>IO</SetConditionMode>
+                        <Duration>5000</Duration>
+                        <IOCategory>User</IOCategory>
+                        <IOName>Habilitar_iny</IOName>
+                        <IOValue>1</IOValue>
+                        <IsPulseSignal>false</IsPulseSignal>
+                        <RobotIOType>RobotBoardUserDO</RobotIOType>
+                    </Attribute>
+                </Condition>
+                <Condition ConditionType="Wait" ConditionAlias="Wait" ConditionUuid="1eb8e1d068a949e9837edecd6f6a0de3">
+                    <Attribute>
+                        <WaitConditionMode>Time</WaitConditionMode>
+                        <WaitTime>2</WaitTime>
+                    </Attribute>
+                </Condition>
+                <Condition ConditionType="Set" ConditionAlias="Set" ConditionUuid="ca44584eef554a92800bdc0dabe527e2">
+                    <Attribute>
+                        <SetConditionMode>IO</SetConditionMode>
+                        <Duration>0</Duration>
+                        <IOCategory>User</IOCategory>
+                        <IOName>Habilitar_iny</IOName>
+                        <IOValue>0</IOValue>
+                        <IsPulseSignal>false</IsPulseSignal>
+                        <RobotIOType>RobotBoardUserDO</RobotIOType>
+                    </Attribute>
+                </Condition>
+            </Condition>
+        </Condition>
+    </Condition>
+</MainProgram>
