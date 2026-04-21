@@ -1,31 +1,7 @@
 ![Logo Institucional](https://github.com/JonatanBogadoUNLZ/PPS-Jonatan-Bogado/blob/9952aac097aca83a1aadfc26679fc7ec57369d82/LOGO%20AZUL%20HORIZONTAL%20-%20fondo%20transparente.png)
 
-# UNLZ — Facultad de Ingeniería (Plantilla de Proyecto)
-## Ingeniería Mecatrónica — README + estructura estándar
-
-Este repositorio es una **PLANTILLA**.  
-Los estudiantes deben **usar este repo como base** (fork o “Use this template”) y **reemplazar los textos entre corchetes** `[ ... ]` con la información real de su proyecto.
-
----
-
-2) Editar este archivo `README.md` completando todos los campos `[ ... ]`.
-
-3) Subir archivos a las carpetas correspondientes:
-   - Código en `CODIGO/`
-   - Planos y esquemas en `PLANOS/`
-   - Fotos / videos en `MULTIMEDIA/`
-   - Datasheets en `DATASHEET/`
-   - Informes en `INFORMES/`
-
----
-
-## ✅ Checklist de entrega
-- [ ] Brief completo (one-liner + pitch + problema + solución + alcance + estado)
-- [ ] Instrucciones de uso reproducibles (otro puede correrlo)
-- [ ] Lista de componentes con cantidades y modelos
-- [ ] Esquemáticos/planos adjuntos en `PLANOS/`
-- [ ] Fotos / video demostración en `MULTIMEDIA/`
-- [ ] Informe PDF en `INFORMES/` (si aplica)
+# UNLZ — Facultad de Ingeniería
+## Ingeniería Mecatrónica
 
 ---
 
@@ -34,7 +10,7 @@ Los estudiantes deben **usar este repo como base** (fork o “Use this template�
 2026_1C_PPS_CobotDispensador_Storani
 
 **Tipo:** [PPS]  
-**Año:** [2026] — **Cuatrimestre:** [1C ]  
+**Año:** [2026] — **Cuatrimestre:** [1C]  
 
 **Carrera:** Ingeniería Mecatrónica  
 **Materia / Curso:** [NOMBRE_DE_LA_MATERIA]  
@@ -235,13 +211,13 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 ---
 
 ## Esquemáticos / Planos
-- [Plano/Esquemático 1] → 
-- [Plano/Esquemático 2] → `PLANOS/[archivo]`
+- [Plano/Esquemático 1] → https://github.com/Estorani/2026_1C_PPS_CobotDispensador_Storani/blob/main/Planos/Vista%20desde%20arriba.pdf
+- [Plano/Esquemático 2] → https://github.com/Estorani/2026_1C_PPS_CobotDispensador_Storani/blob/main/Planos/Planos%20del%20cargador/Despiece.pdf
 
 ---
 
 ## Fotos / Videos
-- Foto 1 → `MULTIMEDIA/[archivo]`
+- Foto 1 → https://github.com/Estorani/2026_1C_PPS_CobotDispensador_Storani/blob/main/Multimedia%20(Im%C3%A1genes%20y%20videos)/Dispensador%20armado.jpeg
 - Foto 2 → `MULTIMEDIA/[archivo]`
 - Video demo → [https://youtube.com/shorts/cSWNZMFp7aM]
 
