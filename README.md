@@ -235,7 +235,7 @@ Se implementa con **[brazo robótico y un dispositivo dispensador de mantas]** y
 ---
 
 ## Esquemáticos / Planos
-- [Plano/Esquemático 1] → `PLANOS/[archivo]`
+- [Plano/Esquemático 1] → 
 - [Plano/Esquemático 2] → `PLANOS/[archivo]`
 
 ---
